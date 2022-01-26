@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/input-text.css" />
         <link rel="stylesheet" href="./css/button.css" />
-        <link rel="stylesheet" href="./css/aviso.css" /
 
         <!-- LOAD JS -->
         <script src="./imc.js" defer></script>
@@ -31,7 +30,10 @@
                     </div>
                 </form>
                 <button id="calcular" class="button template">Calcular</button>
-                <div class="result" id="resultado"><span class="invisible">teste</span></div>
+                <div class="result" id="resultado_container">
+                    <span id="resultado"></span>
+                    <span id="aviso"></span>
+                </div>
             </div>
         </main>
     </body>

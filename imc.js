@@ -4,7 +4,7 @@ document.querySelector("button#calcular").addEventListener("click", () => {
     const nome = document.querySelector("input#nome").value;
     const altura = document.querySelector("input#altura").value;
     const peso = document.querySelector("input#peso").value;
-    const resultado = document.querySelector("div#resultado");
+    const resultado = document.querySelector("span#resultado");
 
     if(validarCampos()) {
         const imc = calcularIMC(peso, altura);
@@ -28,29 +28,33 @@ function calcularIMC(peso, altura){
 }
 
 function classificarIMC(imc) {
-    let aviso = document.querySelector("span");
+    let aviso = document.querySelector("span#aviso");
 
     let categoria;
 
     console.log(imc)
     if (imc < 18.5){
-        categoria = "abaixo do peso";
-        aviso.className = "invisible";
+        categoria = "abaixo do peso.";
+        aviso.textContent = ""
+        aviso.className = "";
     } else if (imc < 25) {
-        categoria = "com peso normal";
+        categoria = "com peso normal.";
         aviso.textContent = "Parabéns!"
         aviso.className = "verde";
     } else if (imc < 30) {
-        categoria = "acima do peso";
-        aviso.className = "invisible";
+        categoria = "acima do peso.";
+        aviso.textContent = ""
+        aviso.className = "";
     } else if (imc < 35) {
-        categoria = "com obesidade grau I";
-        aviso.className = "invisible";
+        categoria = "com obesidade grau I.";
+        aviso.textContent = ""
+        aviso.className = "";
     } else if (imc < 40) { 
-        categoria = "com obesidade grau II";
-        aviso.className = "invisible";
+        categoria = "com obesidade grau II.";
+        aviso.textContent = ""
+        aviso.className = "";
     } else {
-        categoria = "com obesidade mórbida";
+        categoria = "com obesidade mórbida.";
         aviso.textContent = "Cuidado!"
         aviso.className = "vermelho";
     }
