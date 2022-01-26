@@ -1,0 +1,13 @@
+span.invisible {
+    display: none;
+}
+
+span.vermelho {
+    display: block;
+    color: tomato;
+}
+
+span.aviso.verde {
+    display: block;
+    color: lightgreen;
+}
