@@ -11,7 +11,7 @@
     height: 50px;
     border: 1px solid var(--primary-color);
     outline: none;
-    font: bold 1.5rem serif;
+    font: normal 1.25rem Verdana, sans-serif;
     padding-left: 10px;
     background-color: #111;
     color: #fff;
@@ -22,5 +22,5 @@
 }
 
 .input_text label {
-    font: bold 1.5rem serif;
+    font: bold 1.25rem Verdana, sans-serif;
 }

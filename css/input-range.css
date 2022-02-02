@@ -10,12 +10,14 @@
 
 .input_range label {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: normal;
 }
 
 .input_range span.range_value {
     font-size: 2rem;
     color: #fff;
+    font-weight: bold;
 }
 
 .input_range input[type="range"] {
@@ -43,8 +45,8 @@
     -webkit-appearance: none;
     appearance: none;
 
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
 
     border-radius: 50%;
 

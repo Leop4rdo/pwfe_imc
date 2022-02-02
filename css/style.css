@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Verdana, sans-serif;
 }
 :root {
     --primary-color: #9613ed;
-    --light-color: #b65cff;
+    --light-color: #c494eb;
     --dark-color: #8900b3;
     --bg-color: #ec5cff44;
 }
